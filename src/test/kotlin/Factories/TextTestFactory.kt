@@ -2,13 +2,12 @@ package Factories
 
 import configs.TestConfig
 import io.kotest.assertions.asClue
-import io.kotest.core.Tag
 import io.kotest.core.spec.style.stringSpec
 import io.kotest.core.test.TestCaseSeverityLevel
 import io.kotest.matchers.equals.shouldBeEqual
 import io.kotest.matchers.string.shouldHaveLength
 
-fun datatestFactory(data: String) = stringSpec {
+fun textTestFactory(data: String) = stringSpec {
     tags(TestConfig().textTag)
 
     val testData = data

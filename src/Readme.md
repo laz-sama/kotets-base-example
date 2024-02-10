@@ -1,0 +1,1 @@
+Запуск можно производить через gradle test с параметрами -Dkotest.tags="text | data"
